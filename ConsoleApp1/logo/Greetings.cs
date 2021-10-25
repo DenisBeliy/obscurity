@@ -2,27 +2,39 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.IO;
+
+
 namespace ConsoleApp1.logo
 {
+    
     class Greetings
     {
-
-        public static void Logo()
+        
+        public static void PrintLogotips()
         {
-            FileStream fileStream = new FileStream("D:\\Новая игра на C#\\Fiels\\logo company.txt", FileMode.Open);
-            //File.OpenRead("D:\\Новая игра на C#\\Fiels\\logo company.txt");
-
-            StreamReader streamReader = new StreamReader(fileStream);
-            string textOfFile = streamReader.ReadToEnd();
-
-            Console.WriteLine(textOfFile);
-
-            fileStream.Close();
-            
+            PrintCompanyLogo(); // отрисовка логотипа компании
+            PrintGameLogo(); // отрисовка логотипа игры
         }
 
+
+        
+
+        private static void PrintCompanyLogo()
+        {
+            string logoCompany = Properties.Resources.logo_company;
+            Console.WriteLine(" " + logoCompany);
+            Thread.Sleep(2000);
+            Console.Clear();
+        }
+        private static void PrintGameLogo()
+        {
+            string logoGame = Properties.Resources.logo_game;
+            Console.WriteLine(" " + logoGame);
+            Thread.Sleep(2000);
+            Console.Clear();
+        }
 
     }
 }
