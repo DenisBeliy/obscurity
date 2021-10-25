@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading;
 
 using ConsoleApp1.logo;
+using ConsoleApp1.Menu;
 namespace ConsoleApp1
 {
     class Program
@@ -22,7 +23,7 @@ namespace ConsoleApp1
             ConsoleFullScreen();
             Thread.Sleep(500); 
             Greetings.PrintLogotips();
-
+            Menu.Menu.MenuVisual();
 
             Console.ReadLine();
         }
