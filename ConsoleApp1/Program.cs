@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -17,9 +18,12 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
+
             ConsoleFullScreen();
             Thread.Sleep(500); 
             Greetings.PrintLogotips();
+
+
             Console.ReadLine();
         }
 

@@ -67,5 +67,17 @@
   <ItemGroup>
     <None Include="Resources\logo game.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuTest1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu1.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
