@@ -15,7 +15,6 @@ namespace ConsoleApp1.Menu
             PrintMenu(); //отрисовка изначального меню
         }
 
-
         private static void PrintMenu()
         {
             string prMenu1 = Properties.Resources.Menu1;
@@ -24,7 +23,15 @@ namespace ConsoleApp1.Menu
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine(" " + prMenu1);
-     
+
+            
+
+           
+        }
+
+        private static void MenuLogic()
+        {
+            
         }
 
 

@@ -21,10 +21,10 @@ namespace ConsoleApp1
         {
 
             ConsoleFullScreen();
-            Thread.Sleep(500); 
+            Thread.Sleep(500);
             Greetings.PrintLogotips();
             Menu.Menu.MenuVisual();
-
+            /*Console.WriteLine("\t\t     Меню программы: \n");*/
             Console.ReadLine();
         }
 
